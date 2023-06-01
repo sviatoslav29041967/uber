@@ -613,4 +613,55 @@ nav {
   .menu_link {
     font-size: 11px;
   }
+}
+.psevdo .click_me {
+  width: 250px;
+  height: 50px;
+  background-color: #1CA8C3;
+  cursor: pointer;
+  margin: 50px;
+  transition: 0.5s all;
+}
+.psevdo .click_me:hover {
+  background-color: #FF5656;
+  color: #1CA8C3;
+  border-radius: 15%;
+  width: 150px;
+  margin: 35px;
+}
+.psevdo .click_me:active {
+  background-color: green;
+  color: white;
+}
+.psevdo .click_me:focus {
+  background-color: grey;
+}
+.psevdo .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #FF5656;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.psevdo .circle:nth-child(2n) {
+  background-color: #070716;
+}
+.psevdo .circle:nth-child(2n+1) {
+  background-color: #1CA8C3;
+}
+.psevdo .circle::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FF5656;
+  width: 0%;
+}
+.psevdo .circle:hover::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FF5656;
+  width: 100%;
+  transition: 0.5s all;
 }/*# sourceMappingURL=style.css.map */
